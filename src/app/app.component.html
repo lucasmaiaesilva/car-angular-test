@@ -1,0 +1,35 @@
+<style>
+</style>
+
+<header>
+  <div class="container">
+    <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/21_Angular-512.png" />
+    <span>Candidato: {{ candidate }}</span>
+  </div>
+</header>
+
+<div class="content" role="main">
+  <div class="container">
+    <ul>
+      <li *ngFor="let car of products">
+        <div>
+          <strong>Nome: </strong>{{ car.Name }}
+        </div>
+        <div>
+          <strong>Cilindros: </strong>{{ car.Cylinders }}
+        </div>
+        <div>
+          <strong>Cavalos de Força: </strong>{{ car.Horsepower }}
+        </div>
+        <div>
+          <strong>Peso em Libras: </strong>{{ car.Weight_in_lbs }}
+        </div>
+        <div>
+          <strong>País de Origem: </strong>{{ car.Origin }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
